@@ -12,9 +12,9 @@ export const AudioCutter = () => {
   const [audio, setAudio] = useState<Blob | null>(null);
   const [fileName, setFileName] = useState<string | null>(null);
 
-  const [currentTime, setCurrentTime] = useState(0);
+  const [_, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+  //   const [isPlaying, setIsPlaying] = useState(false);
   const [leftTrimmerPos, setLeftTrimmerPos] = useState(0);
   const [rightTrimmerPos, setRightTrimmerPos] = useState(100);
   const [isDragging, setIsDragging] = useState<"left" | "right" | null>(null);
