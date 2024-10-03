@@ -29,7 +29,6 @@ export const AudioCutter = () => {
     }`;
   };
 
-  // Handle audio file change
   useEffect(() => {
     if (audio && audioElementRef.current) {
       const audioUrl = URL.createObjectURL(audio);
@@ -37,7 +36,6 @@ export const AudioCutter = () => {
       const file = audio as File;
       setFileName(file.name);
     }
-    console.log(audio);
   }, [audio]);
 
   // Handle play/pause toggle
