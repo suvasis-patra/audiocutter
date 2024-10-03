@@ -12,7 +12,7 @@ export const AudioCutter = () => {
   const [audio, setAudio] = useState<Blob | null>(null);
   const [fileName, setFileName] = useState<string | null>(null);
 
-  const [_, setCurrentTime] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   //   const [isPlaying, setIsPlaying] = useState(false);
   const [leftTrimmerPos, setLeftTrimmerPos] = useState(0);
@@ -35,6 +35,7 @@ export const AudioCutter = () => {
       audioElementRef.current.src = audioUrl;
       const file = audio as File;
       setFileName(file.name);
+      console.log(currentTime);
     }
   }, [audio]);
 
