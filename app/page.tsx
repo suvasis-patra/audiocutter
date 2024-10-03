@@ -1,7 +1,5 @@
 import { AudioCutter } from "@/components/AudioCutter";
-import { Controls } from "@/components/Controls";
-import { UploadAudio } from "@/components/UploadAudio";
-import { Box, Button, Flex, Title, Text, Container } from "@mantine/core";
+import { Container } from "@mantine/core";
 
 export default function Home() {
   return (
