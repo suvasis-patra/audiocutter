@@ -41,16 +41,16 @@ export const AudioCutter = () => {
   }, [audio]);
 
   // Handle play/pause toggle
-  const togglePlayPause = () => {
-    if (audioElementRef.current) {
-      if (isPlaying) {
-        audioElementRef.current.pause();
-      } else {
-        audioElementRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
+  //   const togglePlayPause = () => {
+  //     if (audioElementRef.current) {
+  //       if (isPlaying) {
+  //         audioElementRef.current.pause();
+  //       } else {
+  //         audioElementRef.current.play();
+  //       }
+  //       setIsPlaying(!isPlaying);
+  //     }
+  //   };
 
   // Update current time
   const handleTimeUpdate = () => {
@@ -67,9 +67,9 @@ export const AudioCutter = () => {
   };
 
   // Calculate the position of the vertical line based on current time
-  const getSliderPosition = () => {
-    return (currentTime / duration) * 100;
-  };
+  //   const getSliderPosition = () => {
+  //     return (currentTime / duration) * 100;
+  //   };
 
   // Convert trimmer position to time
   const getTrimmerTime = (pos: number) => {
